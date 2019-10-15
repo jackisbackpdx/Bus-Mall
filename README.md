@@ -1,2 +1,6 @@
-# Bus-Mall
-this is a voting system on items
+# Assets for BUSMALL Lab
+Reyand is a mother of 3 and works in downtown Portland. Reyand has to rid the bus for 30 minutes each way to and from work. Althoguh she has a babysitter, she doesn't have a maid, Reyand wants her floors to be clean by the time she gets home, as she already has such a busy schedule. For this reason, Reyand would choose the babysweeper product, and also any product that relates to having children, as she likes to spend all her excess money on novelty baby items.
+
+Mark loves exotic meats, there aren't enough weird meats in the world for mark. He goes to exotic meat shops and jerkey conventions. For this reason, Mark would buy the Dragon Meat and the Unicorn meat, as well as the spoon pen so he could eat the Unicorn Meat, which resepmbles spam, while he writes a review of the meat for his exotic meat blog.
+
+Jessie is an unapologetic nerd, who loves to buy anything related to sci-fi with their paycheck. They ride the bus constantly while reading Star Trek and Firefly novels. This is why Jessie would be inclined to purchase the Cthulhu and the Tauntaun sleeping bags, as they collect anything sci fi that they can get their hands on.
