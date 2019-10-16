@@ -2,11 +2,13 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    background-color: #50c878;
 }
 section {
     display: flex;
     justify-content: space-around;
     width: 45%;
+    background-color: pink;
 }
 h1 {
     text-align: center;
@@ -27,4 +29,7 @@ img {
 canvas {
     width: 50%;
     height: 300px;
+  }
+  body {
+      background-color: purple;
   }

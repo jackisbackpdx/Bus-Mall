@@ -90,7 +90,7 @@ const newProductButton = () => {
                             {
                                 label: 'times clicked',
                                 data: timesClickedArr,
-                                backgroundColor: 'purple',
+                                backgroundColor: 'pink',
                                 borderColor: 'grey',
                                 borderWidth: 1
                             }]
