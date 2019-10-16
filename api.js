@@ -58,7 +58,7 @@ export const busMall = [
     {
         id: 'duck-muzzle',
         name:'Duck Muzzle',
-        image: './assets/dog-duck',
+        image: './assets/dog-duck.jpg',
         timesShown: 0,
         timesClicked: 0
     },
@@ -86,7 +86,7 @@ export const busMall = [
     {
         id: 'pizza-scissors',
         name:'Pizza Scissors',
-        image: './assets/scissors',
+        image: './assets/scissors.jpg',
         timesShown: 0,
         timesClicked: 0
     },
