@@ -14,7 +14,17 @@ h1 {
 body {
     width: 100%;
 }
+input {
+    display: none;
+}
+img:hover {
+    cursor: pointer;
+}
 img {
     height: 100px;
     width: 100px;
 }
+canvas {
+    width: 50%;
+    height: 300px;
+  }

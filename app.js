@@ -3,7 +3,6 @@ import { MallArray } from './ItemArray.js';
 
 const inputTags = document.querySelectorAll('input');
 const imageTags = document.querySelectorAll('img');
-const itemName = document.getElementsByClassName('name');
 
 let timesShownArr = [];
 let timesClickedArr = [];
@@ -44,13 +43,10 @@ const newProductButton = () => {
     const addInputValues = () => inputTags.forEach((input, i) => {
         if (i === 0) {
             input.value = randomProduct.id;
-            console.log(input.value);
         } else if (i === 1) {
             input.value = randomProduct2.id;
-            console.log(input.value);
         } else if (i === 2) {
             input.value = randomProduct3.id;
-            console.log(input.value);
         }
     });
 
@@ -76,14 +72,42 @@ const newProductButton = () => {
                 busMall.forEach((item) => {
                     timesClickedArr.push(item.timesShown);
                     timesShownArr.push(item.timesClicked);
-                    console.log('times clicked');
-                    console.log('times shown');
-                    console.log(timesClickedArr);
-                    console.log(timesShownArr);
+                    
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    const namesData = busMall.map(item => item.name);
+                    
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: namesData,
+                            datasets: [{
+                                label: 'times shown',
+                                data: timesShownArr,
+                                backgroundColor: 'blue',
+                                borderColor: 'red',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'times clicked',
+                                data: timesClickedArr,
+                                backgroundColor: 'purple',
+                                borderColor: 'grey',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }
+                        }
+                    });
                 });
             }
             choiceCount++;
-            console.log(choiceCount);
             busMall.forEach((item) => {
                 if (item.id === input.value) {
                     item.timesClicked++;
@@ -91,6 +115,9 @@ const newProductButton = () => {
             });
         });
     });
+
 };
 
 newProductButton();
+
+
