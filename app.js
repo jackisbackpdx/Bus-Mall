@@ -51,7 +51,6 @@ const newProductButton = () => {
     });
 
     
-    
     randomProductFunction();
     addInputValues();
 
@@ -80,6 +79,7 @@ const newProductButton = () => {
                         type: 'bar',
                         data: {
                             labels: namesData,
+                            fontColor: 'white',
                             datasets: [{
                                 label: 'times shown',
                                 data: timesShownArr,
